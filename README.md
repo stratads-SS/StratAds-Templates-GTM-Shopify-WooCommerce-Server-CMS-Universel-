@@ -53,4 +53,4 @@ Le dossier `/public/templates` (ou `/templates`) contient les 4 conteneurs GTM p
 
 ## 👤 À propos
 
-Développé par **StratAds** — Solutions de tracking avancées et acquisition payante.
+Développé par **StratAds** — Solutions d'hébergement Server-Side et de monitoring (Contournement ITP/ADBlocker) 

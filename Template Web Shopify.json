@@ -1,0 +1,721 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2026-09-23 16:39:49",
+    "containerVersion": {
+        "path": "accounts/6376991263/containers/264203740/versions/0",
+        "accountId": "6376991263",
+        "containerId": "264203740",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6376991263/containers/264203740",
+            "accountId": "6376991263",
+            "containerId": "264203740",
+            "name": "Stratads web template Shopify",
+            "publicId": "GTM-NLZJ5ZB3",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1789474873790",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6376991263/containers/264203740/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-NLZJ5ZB3"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "tagId": "7",
+                "name": "[StratAds] - GA4 - Transport Serveur",
+                "type": "googtag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "{{[StratAds] - GA4 Measurement ID}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "event_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{[StratAds] - Event ID}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "configSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "server_container_url"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{[StratAds] - Server URL}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "first_party_collection"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "true"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1789560167406",
+                "firingTriggerId": [
+                    "2147479573"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "tagId": "9",
+                "name": "[StratAds] - Pinterest Tag - Base",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n!function(e){if(!window.pintrk){window.pintrk = function () {\nwindow.pintrk.queue.push(Array.prototype.slice.call(arguments))};var\n  n=window.pintrk;n.queue=[],n.version=\"3.0\";var\n  t=document.createElement(\"script\");t.async=!0,t.src=e;var\n  r=document.getElementsByTagName(\"script\")[0];\n  r.parentNode.insertBefore(t,r)}}(\"https://s.pinimg.com/ct/core.js\");\npintrk('load', '{{[StratAds] - Pinterest Tag ID}}');\npintrk('page', { event_id: '{{[StratAds] - Event ID}}' });\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1789474968364",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "ad_storage"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "value": "ad_user_data"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "tagId": "10",
+                "name": "[StratAds] - Google Ads - Conversion Linker",
+                "type": "gclidw",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCrossDomain",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableUrlPassthrough",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCookieOverrides",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1789474968364",
+                "firingTriggerId": [
+                    "2147479573"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "tagId": "12",
+                "name": "[StratAds] - Meta Pixel - Base",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<!-- Pixel Meta avec StratAds Event ID -->\n<script>\n  !function(f,b,e,v,n,t,s)\n  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?\n  n.callMethod.apply(n,arguments):n.queue.push(arguments)};\n  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\n  n.queue=[];t=b.createElement(e);t.async=!0;\n  t.src=v;s=b.getElementsByTagName(e)[0];\n  s.parentNode.insertBefore(t,s)}(window, document,'script',\n  'https://connect.facebook.net/en_US/fbevents.js');\n  \n  // Initialisation avec ta variable\n  fbq('init', '{{[StratAds] - Meta Pixel ID}}');\n  \n  // Envoi du PageView avec l'Event ID pour la déduplication\n  fbq('track', 'PageView', {}, { eventID: '{{[StratAds] - Event ID}}' });\n</script>\n\n<noscript>\n  <img height=\"1\" width=\"1\" style=\"display:none\"\n       src=\"https://www.facebook.com/tr?id={{[StratAds] - Meta Pixel ID}}&ev=PageView&noscript=1\"/>\n</noscript>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1789474968364",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "ad_storage"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "value": "ad_user_data"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "tagId": "14",
+                "name": "[StratAds] - TikTok Pixel - Base",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n!function (w, d, t) {\n  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=[\"page\",\"track\",\"identify\",\"instances\",\"debug\",\"on\",\"off\",\"once\",\"ready\",\"alias\",\"group\",\"enableCookie\",\"disableCookie\"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};ttq.load=function(e,n){var i=\"https://analytics.tiktok.com/i18n/pixel/events.js\";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,s=d.createElement(\"script\"),s.type=\"text/javascript\",s.async=!0,s.src=i+\"?sdkid=\"+e+\"&lib=\"+t;var a=d.getElementsByTagName(\"script\")[0];a.parentNode.insertBefore(s,a)};\n  ttq.load('{{[StratAds] - TikTok Pixel ID}}');\n  ttq.page({ event_id: '{{[StratAds] - Event ID}}' });\n}(window, document, 'ttq');\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1789474968364",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "ad_storage"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "value": "ad_user_data"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "tagId": "18",
+                "name": "[StratAds] - GA4 - E-commerce Shopify",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "getEcommerceDataFrom",
+                        "value": "dataLayer"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "event_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{[StratAds] - Event ID}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "{{Event}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "{{[StratAds] - GA4 Measurement ID}}"
+                    }
+                ],
+                "fingerprint": "1789560195588",
+                "firingTriggerId": [
+                    "17"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "tagId": "22",
+                "name": "[StratAds] - Snapchat Pixel - Base",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script type='text/javascript'>\n(function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()\n{a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};\na.queue=[];var s='script';var r=t.createElement(s);r.async=!0;\nr.src=n;var m=t.getElementsByTagName(s)[0];\nm.parentNode.insertBefore(r,m);})(window,document,\n'https://sc-static.net/scevent.min.js');\n\nsnaptr('init', '{{[StratAds] - Snapchat Pixel ID}}');\nsnaptr('track', 'PAGE_VIEW', { event_id: '{{[StratAds] - Event ID}}' });\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1790180459248",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "ad_storage"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "value": "ad_user_data"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "tagId": "23",
+                "name": "[StratAds] - Bing UET - Base",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:\"{{[StratAds] - Bing Tag ID}}\", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push(\"pageLoad\")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!==\"loaded\"&&s!==\"complete\"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,\"script\",\"//bat.bing.com/bat.js\",\"uetq\");\nwindow.uetq = window.uetq || [];\nwindow.uetq.push('event', 'page_view', { event_id: '{{[StratAds] - Event ID}}' });\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1790180523971",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "ad_storage"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "value": "ad_user_data"
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "triggerId": "17",
+                "name": "[StratAds] - CE - Ecommerce Events",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "view_item|add_to_cart|begin_checkout|purchase"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1789475121752"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "variableId": "3",
+                "name": "[StratAds] - Meta Pixel ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "VOTRE_PIXEL_ID"
+                    }
+                ],
+                "fingerprint": "1789474968363",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "variableId": "4",
+                "name": "DLV - gtm.uniqueEventId",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "gtm.uniqueEventId"
+                    }
+                ],
+                "fingerprint": "1789474968364",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "variableId": "5",
+                "name": "[StratAds] - Event ID",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  // 1. Analyse du dataLayer pour trouver une vraie transaction\n  var dl = window.dataLayer || [];\n  var tId = null;\n  \n  for (var i = dl.length - 1; i >= 0; i--) {\n    if (dl[i].ecommerce && dl[i].ecommerce.transaction_id) {\n        tId = dl[i].ecommerce.transaction_id;\n        break;\n    } else if (dl[i].transaction_id) {\n        tId = dl[i].transaction_id;\n        break;\n    } else if (dl[i].order_name) {\n        tId = dl[i].order_name;\n        break;\n    }\n  }\n  \n  // Retourner l'ID de commande s'il existe\n  if (tId) return tId;\n\n  // 2. Sinon, génération d'un ID unique (Timestamp + Numéro d'événement interne GTM)\n  var eventId = {{DLV - gtm.uniqueEventId}};\n  var fallback = Math.floor(Math.random() * 100000);\n  \n  return new Date().getTime() + '_' + (eventId ? eventId : fallback);\n}"
+                    }
+                ],
+                "fingerprint": "1789474968364",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "variableId": "6",
+                "name": "[StratAds] - Server URL",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "[StratAds] - Server URL"
+                    }
+                ],
+                "fingerprint": "1789474968364",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "variableId": "8",
+                "name": "[StratAds] - Pinterest Tag ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "VOTRE_PINTEREST_TAG_ID"
+                    }
+                ],
+                "fingerprint": "1789474968364",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "variableId": "11",
+                "name": "[StratAds] - TikTok Pixel ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "VOTRE_TIKTOK_PIXEL_ID"
+                    }
+                ],
+                "fingerprint": "1789474968364",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "variableId": "13",
+                "name": "[StratAds] - Google Ads ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "AW-XXXXXXXXXX"
+                    }
+                ],
+                "fingerprint": "1789474968364",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "variableId": "15",
+                "name": "DLV - user_data.email_address",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "user_data.email_address"
+                    }
+                ],
+                "fingerprint": "1789474968364",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "variableId": "16",
+                "name": "DLV - user_data.phone_number",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "user_data.phone_number"
+                    }
+                ],
+                "fingerprint": "1789474968364",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "variableId": "19",
+                "name": "[StratAds] - GA4 Measurement ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "G-XXXXXXXXXX"
+                    }
+                ],
+                "fingerprint": "1789560146061",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "variableId": "20",
+                "name": "[StratAds] - Snapchat Pixel ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "VOTRE_SNAPCHAT_PIXEL_ID"
+                    }
+                ],
+                "fingerprint": "1790181570727",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "variableId": "21",
+                "name": "[StratAds] - Bing Tag ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "VOTRE_BING_TAG_ID"
+                    }
+                ],
+                "fingerprint": "1790181556420",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6376991263",
+                "containerId": "264203740",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1790181589291",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6376991263/containers/264203740/versions/0?apiLink=version"
+    }
+}
